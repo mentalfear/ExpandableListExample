@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-
-    <ExpandableListView
-        android:id="@+id/expandableListView"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="0.5dp"
-        android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft">
+        android:orientation="vertical">
 
-    </ExpandableListView>
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp"
+            android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft">
+
+        </ExpandableListView>
+
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/setText"
@@ -28,7 +34,6 @@
         app:layout_constraintTop_toTopOf="@id/expandableListView">
 
     </TextView>
-
 
 
 </LinearLayout>

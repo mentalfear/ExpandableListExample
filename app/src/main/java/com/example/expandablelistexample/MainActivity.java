@@ -29,9 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         setExpList();
 
-
         TextView testView = findViewById(R.id.setText);
-        testView.setText("Hallo \n Welt");
+        testView.setText("Hallo \n Welt \n Ich bin nicht zu sehen");
     }
 
     private void setExpList(){
